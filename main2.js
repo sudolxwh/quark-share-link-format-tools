@@ -6,7 +6,7 @@
 const fs = require('fs');
 
 // 读取文件内容
-const data = fs.readFileSync('20240829_220823批量分享处理结果.txt', 'utf8');
+const data = fs.readFileSync('input.txt', 'utf8');
 
 const moment = require('moment');
 

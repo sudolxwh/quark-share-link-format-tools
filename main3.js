@@ -1,14 +1,15 @@
 /**
- * 龙之谷合集			https://pan.quark.cn/s/5bf4e6d7aa05										
-百万美元的五棱星			https://pan.quark.cn/s/e838a964167e	
-提取出来链接
+ *原始格式    龙之谷合集			    https://pan.quark.cn/s/5bf4e6d7aa05										
+             百万美元的五棱星			https://pan.quark.cn/s/e838a964167e	
+提取出来纯链接，一行一个
  */
 const fs = require('fs');
 const path = require('path');
+const moment = require('moment');
 
 // 定义文件路径
-const inputFilePath = path.join(__dirname, 'other.txt');
-const outputFilePath = path.join(__dirname, 'result.txt');
+const inputFilePath = path.join(__dirname, 'input3.txt');
+const outputFilePath = path.join(__dirname, `${moment().format('YYYYMMDD_HHmmss')}_result.txt`);
 
 // 读取文件内容
 fs.readFile(inputFilePath, 'utf8', (err, data) => {
